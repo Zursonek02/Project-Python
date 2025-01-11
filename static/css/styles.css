@@ -1,0 +1,114 @@
+/* Ogólne style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 4px 2px;
+    margin-left: 4px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formularze */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #004494;
+}
+
+/* Dashboard */
+.dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dashboard li:last-child {
+    border-bottom: none;
+}
+
+.dashboard li strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Przycisk powrotu */
+.back-link {
+    display: block;
+    max-width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #ccc;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    background-color: #bbb;
+}

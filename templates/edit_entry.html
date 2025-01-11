@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Work Entry</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Edit Work Entry</h1>
+    <form method="post">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" value="{{ entry.title }}" required><br><br>
+        
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="5" required>{{ entry.description }}</textarea><br><br>
+        
+        <button type="submit">Save Changes</button>
+    </form>
+    <a href="/">Back to Dashboard</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Welcome, {{ user.username }}</h1>
+    <a href="/logout">Logout</a>
+    <a href="/add_entry">Add Work Entry</a>
+    <h2>Work Entries</h2>
+    <ul>
+        {% for entry in entries %}
+        <li>
+            <strong>{{ entry.title }}</strong>: {{ entry.description }} - Created by {{ entry.created_by }}
+            {% if user.is_admin or entry.created_by == user.username %}
+            <a href="/edit_entry/{{ entry.id }}">Edit</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
